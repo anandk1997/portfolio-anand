@@ -1,5 +1,5 @@
 {
-  "name": "spaceportfolio",
+  "name": "anandportfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,27 +10,29 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "next": "13.5.6",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-tooltip": "^5.21.6",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "@react-three/drei": "^9.88.4",
-    "@react-three/fiber": "^8.15.4",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6",
+    "@react-three/drei": "^9.88.7",
+    "@react-three/fiber": "^8.15.8",
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
     "framer-motion": "^10.16.4",
     "maath": "^0.10.4",
-    "postcss": "^8",
+    "postcss": "^8.4.31",
     "react-intersection-observer": "^9.5.2",
-    "tailwindcss": "^3",
-    "three": "^0.157.0",
-    "typescript": "^5"
+    "tailwindcss": "^3.3.5",
+    "three": "^0.158.0",
+    "typescript": "^5.2.2"
   }
 }

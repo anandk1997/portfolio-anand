@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   RxDiscordLogo,
@@ -6,8 +8,16 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-
 import { FaYoutube } from "react-icons/fa";
+import { Socials } from "@/constants";
+
+export const handleSocial = (action: string) => {
+  const link = document.createElement("a");
+  link.href = action;
+  link.target = "_blank";
+  link.download = action;
+  link.click();
+};
 
 const Footer = () => {
   return (
@@ -22,7 +32,12 @@ const Footer = () => {
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">Github</span>
+              <span
+                className="text-[15px] ml-[6px] cursor-pointer z-50"
+                onClick={() => handleSocial(Socials[2].action)}
+              >
+                Github
+              </span>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <RxDiscordLogo />
@@ -41,7 +56,12 @@ const Footer = () => {
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]">Linkedin</span>
+              <span
+                className="text-[15px] ml-[6px] cursor-pointer z-50"
+                onClick={() => handleSocial(Socials[1].action)}
+              >
+                Linkedin
+              </span>
             </p>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -50,11 +70,23 @@ const Footer = () => {
               <span className="text-[15px] ml-[6px]">Become Sponsor</span>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Learning about me</span>
+              <span className="text-[15px] ml-[6px]">
+                <a
+                  href="https://api.whatsapp.com/send?phone=9729051796"
+                  className="z-[90]"
+                  target="_blank"
+                >
+                  +91 97290-51796
+                </a>
+
+                {/* Learning about me */}
+              </span>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">
-                mifwebchain@gmail.com
+              <span className="text-[15px] ml-[6px] z-50">
+                <a href="mailto:anandk01997@gmail.com" className="z-50">
+                  anandk01997@gmail.com
+                </a>
               </span>
             </p>
           </div>
