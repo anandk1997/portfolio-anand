@@ -81,16 +81,19 @@ export const Skill_data = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "Download CV",
+    src: "/resume.svg",
+    action: "Resume (Anand).pdf",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
+    name: "Linkedin",
+    src: "/linkedin.svg",
+    action: "https://www.linkedin.com/in/anand-kumar-98bb15159/",
   },
   {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "Github",
+    src: "/github.svg",
+    action: "https://github.com/anandk1997",
   },
 ];
 

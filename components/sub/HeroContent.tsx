@@ -10,7 +10,6 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
-// import styles from './SlidePanel.module.scss'
 
 const HeroContent = () => {
   const [show, setShow] = useState(false);
@@ -52,8 +51,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a MERN Stack Software Engineer with 3+ Years of experience in Modern Tech
-          Stack, and Software development. Check out my projects and skills.
+          I&apos;m a MERN Stack Software Engineer with 3+ Years of experience in
+          Modern Tech Stack, and Software development. Check out my projects and
+          skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
@@ -65,7 +65,7 @@ const HeroContent = () => {
 
         <SlidePanel show={show}>
           <span className="text-lg text-gray-400 my-5 max-w-[600px]">
-            kjbmhjhgjhgjhgv
+            Coming Soon...
           </span>
         </SlidePanel>
       </div>
