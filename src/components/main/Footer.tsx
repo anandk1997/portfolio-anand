@@ -1,13 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxDiscordLogo, RxGithubLogo } from "react-icons/rx";
 import { FaYoutube } from "react-icons/fa";
 import { Socials } from "@/constants";
 
